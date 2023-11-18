@@ -160,7 +160,11 @@ class Human:
 
         self.days_indexes(day)
 
-        dice = randint(1,4)
+        dice = int(input("Что вы хотите сегодня сделать?"
+                         "\n1 - отдохнуть"
+                         "\n2 - поработать"
+                         "\n3 - убраться"
+                         "\n4 - пообедать: "))
 
         if self.satiety < 20:
             print("I'll go eat")
